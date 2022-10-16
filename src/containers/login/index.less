@@ -1,0 +1,66 @@
+@import '../../themes/default.less';
+@import '~antd/es/style/themes/default.less';
+.app-auth {
+  height: 100vh;
+}
+
+.app-auth-body {
+  display: flex;
+  box-shadow: 0 10px 34px -15px rgb(0 0 0 / 24%);
+  background: @white;
+}
+
+.app-auth-intro {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: @white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.app-auth-intro-header {
+  animation-name: fadeInDown;
+  animation-duration: 3s;
+}
+.app-auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.app-auth-form-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.app-auth-form-logo {
+  height: 46px;
+  padding: 8px 0px;
+}
+.app-auth-form-wrap {
+  width: 100%;
+  padding-top: 32px;
+}
+.app-auth-form-submit {
+  background-image: linear-gradient(to top left, #f75959, #f35587);
+}
+.app-auth-form-forgot-password {
+  text-align: right;
+  margin-top: 32px;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

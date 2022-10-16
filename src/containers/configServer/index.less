@@ -1,0 +1,26 @@
+@import '../../themes/default.less';
+.app-server {
+  padding: 12px;
+  background-color: @grey-50;
+  border: 1px solid @grey-A100;
+  .ant-tag {
+    border: none;
+    border-radius: 30px;
+    &.app-server-content {
+      background: @blue-500;
+      color: @white;
+    }
+    &.app-server-content-error {
+      background: @red-500;
+      color: @white;
+    }
+    &.app-server-status-enable {
+      background: @green-500;
+      color: @white;
+    }
+    &.app-server-status-disable {
+      background: @orange-500;
+      color: @white;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../themes/default.less';
+.app-label-field {
+  fontweight: '600';
+  margin: 0;
+  font-size: 13px;
+  &.required {
+    ::after {
+      display: inline-block;
+      margin-left: 4px;
+      color: @red-500;
+      font-size: 14px;
+      line-height: 1;
+      content: '*';
+    }
+  }
+}

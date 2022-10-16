@@ -1,0 +1,25 @@
+enum ROUTE {
+  HOME = '/',
+  LOGIN = '/login',
+  // DASHBOARD = '/dashboard',
+  PROFILE = '/profile',
+  // FORGOT_PASSWORD = '/forgot-password',
+  CONFIG_DOMAIN = '/domains/config-domain/:domainId/:domainName/:merchantId/:currentTab',
+  DOMAINS = '/domains',
+  // RECORDS = '/records',
+  USERS = '/users',
+  MERCHANTS = '/merchants',
+  ADMIN_CONFIG_BACKEND_ID = '/admin-config-backend/:configId',
+  ADMIN_CONFIG_BACKEND = '/admin-config-backend',
+  CONFIG_BACKEND = '/config-backend',
+  CONFIG_SERVER = '/config-server',
+  SETTING_POWERDNS = '/setting-powerdns',
+  // WHITE_LIST_IP = '/white-list-ip',
+  LOG_POWERDNS = '/log-powerdns',
+  LOG_CMS = '/log-cms',
+  CONFIG_REMOTE_BACKEND = '/config-remote-backend',
+  METRICS = '/metrics',
+  TRAFFIC_FLOW = '/traffic-flow',
+}
+
+export default ROUTE;

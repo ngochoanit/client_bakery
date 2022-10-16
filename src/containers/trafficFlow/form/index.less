@@ -1,0 +1,79 @@
+@import '../../../themes/default.less';
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.traffic-flow {
+  .ant-modal-body {
+    overflow: auto;
+    padding: 0;
+    margin: 0 24px;
+
+    .traffic-flow-form {
+      margin-bottom: 24px;
+
+      .form-item-record-type {
+        margin: 24px;
+      }
+
+      .form-list-container {
+        position: relative;
+        margin-left: 136px;
+      }
+
+      .form-card-item {
+        width: 260px;
+        height: 100px;
+
+        .ant-card-head {
+          background: @main-bg;
+
+          .ant-card-head-wrapper {
+            .ant-card-head-title {
+              padding: 4px 0px;
+            }
+          }
+        }
+
+        .ant-card-body {
+          padding: 12px;
+
+          .ant-form-item {
+            margin-bottom: 0px;
+          }
+        }
+      }
+
+      .form-list-container {
+        display: flex;
+
+        .first-button-container {
+          height: 100px;
+
+          &::after {
+            content: '';
+            width: 1px;
+            height: 60px;
+            background: @grey-500;
+            position: absolute;
+            top: -25px;
+          }
+
+          button {
+            z-index: 1;
+          }
+        }
+
+        .form-list-item {}
+      }
+
+      .line {
+        width: 50px;
+        border-top: 1px solid @grey-500;
+      }
+    }
+  }
+}

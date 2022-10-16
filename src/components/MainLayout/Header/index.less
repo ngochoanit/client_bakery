@@ -1,0 +1,34 @@
+@import '../../../themes/default.less';
+
+.app-header {
+  &.ant-layout-header {
+    height: 60px;
+    background: @white;
+    z-index: 1;
+    box-shadow: rgba(41, 48, 66, 0.1) 0px 0px 2rem 0px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .app-header-right,
+    .app-header-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      .app-header-toggle-menu {
+        font-size: 24px;
+      }
+      .app-header-logo-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .app-header-logo-img {
+          height: 30px;
+        }
+      }
+    }
+    .app-header-right {
+      gap:4px;
+    }
+  }
+}

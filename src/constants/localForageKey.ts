@@ -1,0 +1,5 @@
+enum LOCAL_FORAGE_KEY {
+  USER_INFO = 'USER_INFO',
+}
+
+export default LOCAL_FORAGE_KEY;

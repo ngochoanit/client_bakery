@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: __PROJECT_NAME__-__CI_BUILD_REF_SLUG__
+  namespace: __PROJECT_GROUP_NAMESPACE__
+  labels:
+    app: __PROJECT_NAME__-__CI_BUILD_REF_SLUG__
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/enable-cors: "true"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "*"
+    nginx.ingress.kubernetes.io/cors-allow-headers: "Content-Type,x-access-token,Access-Control-Allow-Origin"
+spec:
+  rules:
+    - host: __K8S_HOST__
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: __PROJECT_NAME__-__CI_BUILD_REF_SLUG__
+              servicePort: 80

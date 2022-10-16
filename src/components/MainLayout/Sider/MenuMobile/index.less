@@ -1,0 +1,33 @@
+@import '../../../../themes/default.less';
+
+.app-menu-mobile {
+  .ant-drawer-content-wrapper {
+    position: absolute;
+    .ant-drawer-content {
+      background: @menu-bg;
+      .ant-drawer-header {
+        height: 60px;
+        padding: 0;
+        .app-menu-mobile-logo {
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border:none;
+          .app-menu-mobile-logo-img {
+            height: 36px;
+          }
+        }
+      }
+      .ant-drawer-body {
+        padding: 0;
+        .ant-menu-item {
+          margin: 8px 0px;
+          .ant-menu-item-icon{
+            font-size:16px
+          }
+        }
+      }
+    }
+  }
+}

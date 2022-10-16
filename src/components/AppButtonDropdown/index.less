@@ -1,0 +1,26 @@
+@import '../../themes/default.less';
+.btn-dropdown {
+  &.ant-btn {
+    padding: 0 !important;
+    background-color: @grey-50;
+    .content {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .text,
+      .icon {
+        line-height: 1;
+        padding: 8px;
+        height: 100%;
+        text-align: center;
+      }
+      .icon {
+        border-left: 1px solid @grey-300;
+      }
+    }
+    // &:hover:active {
+    //   background-color: @info-50;
+    // }
+  }
+}

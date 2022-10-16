@@ -1,0 +1,47 @@
+@import '../../themes/default.less';
+
+
+.app-tag {
+  border: none;
+  border-radius: 30px;
+
+  &.primary,
+  &.master,
+  &.failover,
+  &.admin {
+    background: @blue-500;
+    color: @white;
+  }
+
+
+  &.success,
+  &.active,
+  &.available,
+  &.native,
+  &.geolocation,
+  &.merchant {
+    background: @green-500;
+    color: @white;
+  }
+
+
+  &.warning,
+  &.slave,
+  &.ip_based,
+  &.user {
+    background: @orange-500;
+    color: @white;
+  }
+
+  &.error,
+  &.inactive {
+    background: @red-500;
+    color: @white;
+  }
+
+  &.white {
+    background: @white;
+    color: @black;
+  }
+
+}
